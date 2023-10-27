@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Copperage/TOP-Restaurant-Page#readme",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
     "sass": "^1.63.4",
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",

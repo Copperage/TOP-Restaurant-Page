@@ -1,3 +1,5 @@
 import './styles/main.scss';
 
-// import './modules/page-init.js'
+import initWebsite from './modules/page-init';
+
+initWebsite();

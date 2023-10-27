@@ -1,11 +1,13 @@
 // Global Styles
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 :root {
-	font-size: 16px;
+	font-size: 18px;
 	--background-highlight: #e6ded3;
 	--background-main: #fff8ed;
 	--font-color: #1f1f1f;
 	--font-color-hover: #646464;
+	--font-color-transparent: #4444448a;
 }
 
 body {
@@ -31,12 +33,7 @@ body {
 .left {
 	display: grid;
 	position: relative;
-	background-image: linear-gradient(
-			180deg,
-			rgba(0, 0, 0, 90%) 0%,
-			rgba(0, 0, 0, 0%) 50%
-		),
-		url('/src/assets/imgs/pexels-nati-17216084.jpg');
+	background-image: url('/src/assets/imgs/pexels-nati-17216084.jpg');
 	background-color: var(--font-color);
 	background-position: 0 -50px;
 	background-repeat: no-repeat;
@@ -75,13 +72,19 @@ footer {
 
 .header {
 	display: flex;
-	height: 125px;
+	height: 150px;
 	width: 100%;
 	justify-content: center;
 	align-items: center;
+	font-family: 'Great Vibes', cursive;
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 80%) 0%,
+		rgba(0, 0, 0, 0%) 80%
+	);
 
-	.header-title {
-		font-size: 3rem;
+	h1 {
+		font-size: 4rem;
 		color: var(--background-main);
 	}
 }
@@ -91,7 +94,7 @@ footer {
 	background-color: var(--background-main);
 	height: 150px;
 	width: 100%;
-	top: 8rem;
+	top: 7rem;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -101,7 +104,7 @@ footer {
 	box-shadow: -11px 2px 10px rgba(0, 0, 0, 0.4);
 
 	.button-nav {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		cursor: pointer;
 		text-decoration: none;
 		color: var(--font-color);
@@ -112,7 +115,30 @@ footer {
 	}
 
 	.active {
-		border-bottom: 2px solid var(--font-color-hover);
+	}
+
+	.active::before {
+		content: '';
+		position: absolute;
+		width: 8%;
+		top: 65%;
+		left: 13%;
+		rotate: 1deg;
+		border-bottom: 4px solid var(--font-color-transparent);
+		border-bottom-right-radius: 200px 95px;
+		border-bottom-left-radius: 200px 75px;
+	}
+
+	.active::after {
+		content: '';
+		position: absolute;
+		left: 12%;
+		width: 8%;
+		top: 64.5%;
+		rotate: -2deg;
+		border-bottom: 3px solid var(--font-color-transparent);
+		border-bottom-right-radius: 200px 25px;
+		border-bottom-left-radius: 245px 35px;
 	}
 
 	.button-nav:hover,
@@ -121,7 +147,9 @@ footer {
 	}
 }
 
-// Menu
+// Home Contents
+
+// Menu Contents
 
 #menu {
 	display: flex;
