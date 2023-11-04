@@ -46,7 +46,7 @@ body {
 	background-color: var(--background-main);
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 
-	.box-right-contents {
+	#box-right-contents {
 		padding: 4rem 2rem;
 		font-size: 1.1rem;
 	}
@@ -76,7 +76,7 @@ footer {
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Great Vibes', cursive;
+	font-family: 'Great Vibes', sans-serif;
 	background: linear-gradient(
 		180deg,
 		rgba(0, 0, 0, 80%) 0%,
@@ -145,6 +145,27 @@ footer {
 }
 
 // Home Contents
+
+.home-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 80vh;
+}
+
+.review-box {
+	display: flex;
+	flex-direction: column;
+	font-style: italic;
+	background-color: rgba($color: #000000, $alpha: 0.03);
+	border-radius: 25px;
+	padding: 0 5rem;
+
+	&:last-child {
+		align-items: flex-end;
+	}
+}
 
 // Menu Contents
 

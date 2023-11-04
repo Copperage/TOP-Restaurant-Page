@@ -29,7 +29,7 @@ function createHeader() {
 	titleDiv.classList.add('header');
 
 	const titleText = document.createElement('h1');
-	titleText.textContent = 'Boulangerie Générique';
+	titleText.textContent = 'Pâtisserie Générique';
 
 	const leftPage = document.querySelector('.left');
 
