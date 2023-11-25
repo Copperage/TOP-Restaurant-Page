@@ -36,24 +36,3 @@ function loadHome() {
 }
 
 export default loadHome;
-
-/*
-<div class="box right">
-    <div id="box-right-contents">
-        <div id="home" class="content"></div>
-
-        <div id="menu" class="content">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-        </div>
-
-        <div id="contact" class="content"></div>
-    </div>
-</div>
-*/

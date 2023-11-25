@@ -1,4 +1,6 @@
 import loadHome from './home';
+import loadMenu from './menu';
+import loadContact from './contact';
 
 function createLayout() {
 	const leftPage = document.createElement('div');
@@ -56,6 +58,21 @@ function createNavbar() {
 
 	const leftPage = document.querySelector('.left');
 
+	home.addEventListener('click', () => {
+		setActive(home);
+		loadHome();
+	});
+
+	menu.addEventListener('click', () => {
+		setActive(menu);
+		loadMenu();
+	});
+
+	contact.addEventListener('click', () => {
+		setActive(contact);
+		loadContact();
+	});
+
 	nav.appendChild(navBar);
 	navBar.appendChild(home);
 	navBar.appendChild(menu);
@@ -69,6 +86,9 @@ function setActive(button) {
 	navButtons.forEach((button) => {
 		button.classList.remove('active');
 	});
+
+	const rightContents = document.getElementById('box-right-contents');
+	rightContents.innerHTML = '';
 
 	button.classList.add('active');
 }
